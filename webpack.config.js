@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
+const express = require('express');
 
 module.exports = {
     mode: 'development',
@@ -9,7 +10,28 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        static: './dist'
+        static: './dist',
+        onBeforeSetupMiddleware: (devServer) => {
+            if (!devServer) {
+                throw new Error('webpack-dev-server is not defined');
+            }
+
+            devServer.app.use(express.json());
+            devServer.app.post('/api/newsletter', function (req, res) {
+                if (req.body && req.body.emailAddress) {
+                    if (req.body.emailAddress === 'existinguser@nayan.be') {
+                        res.json({ success: false, errorMessage: 'EXISTING_USER' });
+                        return;
+                    }
+
+                    res.json({ success: true });
+                    return;
+                }
+
+                res.status(400);
+                res.json({ success: false });
+            });
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({

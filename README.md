@@ -22,7 +22,7 @@ Make a fork of this repository (hosted on your own GitHub-account) and convert [
 
 ### General Guidance
 * Translate the design to clean front-end code that works across all devices. Only a desktop-design is available, but use your own judgement to translate this to smaller screen sizes.
-* Document your progress and thoughts, both within your code and in concise, clear commits.
+* Document your progress and thoughts (in English), both within your code and in concise, clear commits.
 * At Nayan, we aim to use BEM notation, so if you can prove your proficiency in this, that's a plus.
 * You can add helper libraries if needed, but try to code the bulk of the page & actual components yourself so we can properly judge your skills.
 
@@ -30,4 +30,6 @@ Make a fork of this repository (hosted on your own GitHub-account) and convert [
 The main aim is to just set up the page, but if you feel ready, you can tackle the following challenges (preferably in Vue.js):
 
 * Have the countdown at the top actually count down to a specific date & time in real-time. Black Friday falls on 22/11/2022, but the component that you develop should be reusable for other situations.
-* Handle the submit of the newsletter-form at the bottom through an AJAX request (using Axios). There's no real API endpoint available in this example, but you can simulate a POST-request to `/api/newsletter-subscribe/` with an `email` parameter.
+* Handle the submit of the newsletter-form at the bottom through an AJAX request. The email address of the customer should be submitted in a JSON payload (containing the `emailAddress`-property) through a POST-request to `/api/newsletter`. Give the customer proper feedback of the result of this request.
+
+  The Webpack Dev Server (started through `npm run watch`) contains a basic mock call for this API request. Any valid request will be approved, except a subscription for `existinguser@nayan.be`.
