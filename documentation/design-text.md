@@ -5,8 +5,8 @@ XX Days XX Hours XX Min XX Sec
 The countdown to Samsonite’s Black Friday Sales is on!
 Be sure to check back for the best Black Friday Deals on suitcases and bags.
 
-## When is Black Friday 2021?
-This year, Black Friday occurs on **26 November 2021**. Save this date and you’ll be guaranteed some fantastic discounts on selected Samsonite products.
+## When is Black Friday 2022?
+This year, Black Friday occurs on **22 November 2022**. Save this date and you’ll be guaranteed some fantastic discounts on selected Samsonite products.
 
 ## What is Black Friday?
 Black Friday is one of the most popular shopping days of the year with several retailers and brands offering huge discounts, deals and promotions. Originating in the USA, Black Friday occurs on the 4th Friday in November – the day after Thanksgiving in America – and marks the start of the Christmas shopping period. 

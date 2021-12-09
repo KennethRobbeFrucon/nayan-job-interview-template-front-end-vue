@@ -29,5 +29,5 @@ Make a fork of this repository (hosted on your own GitHub-account) and convert [
 ### Advanced topics
 The main aim is to just set up the page, but if you feel ready, you can tackle the following challenges (preferably in Vue.js):
 
-* Have the countdown at the top actually count down to a specific date & time in real-time. Black Friday falls on 26/11/2021, but the component that you develop should be reusable for other situations.
+* Have the countdown at the top actually count down to a specific date & time in real-time. Black Friday falls on 22/11/2022, but the component that you develop should be reusable for other situations.
 * Handle the submit of the newsletter-form at the bottom through an AJAX request (using Axios). There's no real API endpoint available in this example, but you can simulate a POST-request to `/api/newsletter-subscribe/` with an `email` parameter.
