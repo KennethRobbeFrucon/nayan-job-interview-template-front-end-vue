@@ -29,7 +29,7 @@ Make a fork of this repository (hosted on your own GitHub-account) and convert [
 ### Advanced topics
 The main aim is to just set up the page, but if you feel ready, you can tackle the following challenges (preferably in Vue.js):
 
-* Have the countdown at the top actually count down to a specific date & time in real-time. Black Friday falls on 22/11/2022, but the component that you develop should be reusable for other situations.
+* Have the countdown at the top actually count down to a specific date & time in real-time. Black Friday falls on 24/11/2023, but the component that you develop should be reusable for other situations.
 * Handle the submit of the newsletter-form at the bottom through an AJAX request. The email address of the customer should be submitted in a JSON payload (containing the `emailAddress`-property) through a POST-request to `/api/newsletter`. Give the customer proper feedback of the result of this request.
 
   The Webpack Dev Server (started through `npm run watch`) contains a basic mock call for this API request. Any valid request will be approved, except a subscription for `existinguser@nayan.be`.
