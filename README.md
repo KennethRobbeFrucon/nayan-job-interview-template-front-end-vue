@@ -33,3 +33,9 @@ The main aim is to just set up the page, but if you feel ready, you can tackle t
 * Handle the submit of the newsletter-form at the bottom through an AJAX request. The email address of the customer should be submitted in a JSON payload (containing the `emailAddress`-property) through a POST-request to `/api/newsletter`. Give the customer proper feedback of the result of this request.
 
   The Webpack Dev Server (started through `npm run watch`) contains a basic mock call for this API request. Any valid request will be approved, except a subscription for `existinguser@nayan.be`.
+
+* On our sites, this sign up would actually be handled through Emarsys, our eCRM platform.
+  
+  You can find their API documentation [here](https://dev.emarsys.com/). Have a look through their documentation and identify the endpoint(s) that you'll need to subscribe a contact. Describe how you would approach this, what challenges you might face and how you'd tackle them.
+  
+  You don't have to actually code this integration (as you'll lack the actual authentication needed), we're mainly interested in your approach and thoughts. We'll discuss these further in the follow-up interview.
